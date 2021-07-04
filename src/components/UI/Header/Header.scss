@@ -1,0 +1,83 @@
+.header {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 20px;
+  .logo {
+    display: flex;
+    align-items: center;
+    img {
+      width: 124px;
+    }
+    .help-text {
+      font-size: 22px;
+      padding-left: 4px;
+      color: #5f6368;
+      margin-top: -4px;
+    }
+   
+  } //logo left end
+
+  .action-btn {
+    display: flex;
+    align-items: center;
+     
+    .icons-block {
+      padding: 0px 30px;
+      display: flex;
+      @media (max-width: 767px) {
+        padding: 0px 5px;
+      }
+    }
+    .icon {
+      padding: 10px 10px;
+      font-size: 20px;
+      color: #5f6368;
+      &:hover {
+        cursor: pointer;
+        border-radius: 50%;
+        background-color: #e3e3e3;
+      }
+    }
+    .profile {
+      display: flex;
+      align-items: center;
+      border-radius: 50%;
+      .icon-app {
+        padding: 10px 12px;
+        margin-right: 20px;
+        font-size: 20px;
+        &:hover {
+          cursor: pointer;
+          border-radius: 50%;
+          background-color: #e3e3e3;
+        }
+        @media (max-width: 767px) {
+          margin-right: 5px;
+        }
+      }
+      .profileImg {
+        display: flex;
+        border-radius: 50%;
+        transition: all 0.2s ease-in;
+        &:hover{
+             transform: scale(1.1);
+             transition: all 0.2s ease-out;
+        }
+        img {
+          width: 50px;
+          height: 50px;
+          border-radius: 50%;
+        }
+      }
+    }
+    @media (max-width: 425px) {
+         .date-block{
+              display:none;
+         }
+     }
+  }
+ 
+}

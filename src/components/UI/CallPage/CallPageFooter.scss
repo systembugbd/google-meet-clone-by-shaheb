@@ -1,0 +1,79 @@
+.footer-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 80px;
+  bottom: 0px;
+  position: absolute;
+  width: 100%;
+  background: #252525;
+  color: #e3e3e3;
+  font-size: 20px;
+  @media (max-width: 768px) {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    padding: 20px 0px;
+    font-size: 15px;
+  }
+  .left {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .left__icon {
+      padding: 20px;
+      user-select: none;
+    }
+  }
+  .center {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .icon.icon-faTransgenderAlt {
+      padding: 15px 16px;
+    }
+    .icon.icon-faShareAlt {
+      padding: 15px 17px;
+    }
+    .icon.icon-microphone {
+      padding: 15px 18px;
+    }
+    .icon.icon-faPhoneAlt {
+      background: red;
+    }
+    .icon {
+      padding: 15px;
+      margin: 5px;
+      background: #2f2f2f;
+      border-radius: 50%;
+      cursor: pointer;
+
+      &:hover {
+        color: #ffffff;
+        background: #1a73e8;
+      }
+      @media (max-width: 768px) {
+           margin:3px;
+      }
+    }
+  }
+  .right {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    .icon {
+      padding: 15px;
+      margin: 5px;
+      background: #2f2f2f;
+      border-radius: 50%;
+      &:hover {
+        color: #ffffff;
+        background: #1a73e8;
+      }
+    }
+  }
+}

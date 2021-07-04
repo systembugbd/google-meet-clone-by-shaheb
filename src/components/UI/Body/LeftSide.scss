@@ -1,0 +1,133 @@
+.leftside {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+
+  @media (max-width: 768px) {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .heading {
+    h2 {
+      font-size: 3vw;
+      font-weight: 300;
+      margin: 0px;
+      padding-bottom: 20px;
+    }
+    p {
+      padding-bottom: 60px;
+      color: #5f6368;
+      margin: 0px;
+    }
+
+    @media (max-width: 767px) {
+      h2 {
+        font-size: 10vw !important;
+        padding-top: 5rem;
+      }
+    }
+  }
+  .meeting-action {
+    display: flex;
+    align-items: center;
+    @media (max-width: 768px) {
+      .newmeeting {
+        display: none;
+      }
+    }
+
+    .action {
+      padding-right: 20px;
+    }
+    .btn-group {
+      .btn {
+        padding: 14px;
+        font-size: 1rem;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        white-space: nowrap;
+
+        .icon {
+          padding-right: 10px;
+        }
+      }
+      .btn-primary {
+        background: #1a73e8;
+      }
+      .btn-disable {
+        background: #eeeeee;
+        cursor: default;
+      }
+
+      .visible {
+        background: #1a73e8;
+        cursor: pointer;
+      }
+    }
+    .input-group {
+      display: flex;
+      flex-direction: column;
+
+      .inputbox {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid #5f6e68;
+        padding: 14px;
+        color: #5f6368;
+        border-radius: 5px;
+
+        .inputtext {
+          padding: 0 10px;
+          border: 0px;
+          font-size: 1rem;
+          outline: none;
+        }
+      }
+      .message {
+        position: absolute;
+        margin-top: 60px;
+        color: #5f6368;
+        font-size: 14px;
+      }
+    }
+  }
+
+  .knowmore {
+    .hr {
+      margin: 50px 0px 20px 0;
+      border: none;
+      border-bottom: 1px solid #e3e3e3;
+    }
+    .copy {
+      color: #5f6e68;
+      a {
+        color: #1a73e8;
+        text-decoration: none;
+      }
+      @media (max-width: 768px) {
+        position: fixed;
+        display: block;
+        bottom: 12px;
+        text-align: center;
+        
+      }
+    }
+    @media (max-width: 768px) {
+      
+        display: flex;
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+      align-items: center;
+       
+      
+    }
+   
+
+  }
+}

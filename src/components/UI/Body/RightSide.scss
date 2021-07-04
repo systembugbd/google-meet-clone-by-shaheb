@@ -1,0 +1,31 @@
+.rightside {
+  display: flex;
+  position: relative;
+  width: 400px;
+  align-items: center;
+  justify-content: center;
+
+
+  .alert-info{
+       padding-top: 20px;
+       .heading{
+            font-size: 20px;
+       }
+       .disc{
+            font-size:14px;
+       }
+  }
+  .slick-slider {
+    width: 350px;
+    height: 420px;
+     img{
+          // box-shadow: 10px 10px 10px 10px rgba(0, 0, 255, .2);
+          margin: 0 auto;
+     }
+    :before{
+         color:#5f6368;
+    }
+   
+  }
+
+}

@@ -1,0 +1,146 @@
+.callpageui {
+  width: 100%;
+  display: flex;
+  .shareLink {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    width: 100%;
+    max-width: 320px;
+    height: 400px;
+    background: #fff;
+    padding: 20px;
+    // margin: 40px;
+    border-radius: 7px;
+    box-shadow: 2px 2px 15px 6px rgba(0, 0, 0, 0.14);
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    color: #5f6368;
+    text-align: left;
+    transition: all 0.5s ease-in-out;
+    @media (max-width: 425px) {
+      position: relative;
+      top: 0px;
+      left: 0px;
+    }
+    &.collapse {
+      width: 15px !important;
+      height: 15px !important;
+      background: rgba(255, 255, 255, 0.05);
+      left: 10px;
+      top: 10px;
+      color: #fff;
+      transition: all 0.3s ease-in-out;
+      position: absolute;
+      opacity: 0.2;
+
+      &:hover {
+        opacity: 1;
+      }
+    }
+    &.open {
+      width: 80% !important;
+      margin: 0 auto;
+      height: 400px !important;
+      transition: all 0.1s ease-in-out;
+    }
+
+    .heading {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      width: 100%;
+      .icon {
+        transform: rotate(45deg);
+        transition: all 0.2s ease-in-out;
+        cursor: pointer;
+        &:hover {
+          transform: rotate(315deg);
+          transition: all 0.5s ease-in-out;
+        }
+      }
+      .icon-max {
+        transition: all 0.2s ease-in-out;
+        transform: rotate(0deg);
+        &:hover {
+          transform: rotate(360deg);
+          transition: all 0.5s ease-in-out;
+        }
+      }
+    }
+    .btn-group.show {
+      .btn-primary {
+        background: #1a73e8;
+        .icon {
+          padding-right: 10px;
+        }
+      }
+    }
+    .meeting-links {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #5f6368;
+      padding-left: 10px;
+
+      border-radius: 5px;
+      color: #fff;
+      .link {
+        background: none;
+        border: none;
+        color: #fff;
+        font-size: 20px;
+        overflow: hidden;
+        width: 66%;
+      }
+
+      &.show {
+        display: flex;
+      }
+      &.hide {
+        display: none;
+      }
+      .icon {
+        padding: 20px;
+        background: #7e7e7e;
+        cursor: pointer;
+        color: #ffffff;
+        font-size: 25px;
+        border-radius: 0 5px 5px 0px;
+        &:hover {
+          background: #999999;
+          cursor: pointer;
+          color: #bfcddd;
+        }
+      }
+    }
+    .shild-msg {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      &.show {
+        display: flex;
+      }
+      &.hide {
+        display: none;
+      }
+      .icon {
+        padding-right: 10px;
+        color: #1a73e8;
+      }
+    }
+    .copiedSuccess {
+      display: block;
+      color: green;
+      &.show {
+        display: flex;
+      }
+      &.hide {
+        display: none;
+      }
+    }
+  }
+}
