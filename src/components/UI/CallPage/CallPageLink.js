@@ -10,7 +10,7 @@ import {
 import("./CallPageLink.scss");
 
 function CallPageUi() {
-  const [shareLink, setShareLink] = useState(false);
+  const [shareLink, setShareLink] = useState(true);
   const [copyUrl, setCopyUrl] = useState("");
   const [successMsg, setSuccessMsg] = useState('')
   const linkRef = useRef(null);
@@ -39,18 +39,18 @@ function CallPageUi() {
 
   return (
     <div className="callpageui">
-      <div className={shareLink ? "shareLink collapse" : "shareLink open"}>
+      <div className={shareLink ? "shareLink collapse" : "shareLink open"} onClick={shareLinkModal}>
      
         
         {/**
          * Heading and Close
          * */ }
-        <div className="heading">
+        <div className="heading" >
           <div className={shareLink ? "hide": "show"}>Your meeting's ready</div>
           <FontAwesomeIcon
             className={ shareLink? "icon icon-max": "icon icon-cross" }
             icon={shareLink? faWindowMaximize: faPlus}
-            onClick={shareLinkModal}
+           
           />
         </div>
          {/**

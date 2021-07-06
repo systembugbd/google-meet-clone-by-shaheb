@@ -1,0 +1,29 @@
+.nomatch-container {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     flex-direction: column-reverse;
+     color:#fff;
+     height:calc(100vh - 250px);
+     background: rgb(2,0,36);
+     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 0%, rgba(0,212,255,1) 100%);
+     .h1{
+          font-size: 100px;
+          font-weight: 300;
+          padding: 0;
+          margin: 0;
+          &:hover{
+               text-shadow: 2px 3px 8px rgba(114,0,0,0.8);
+          }
+     }
+     .h3{
+          padding:20px;
+          font-size:30px;
+          font-weight: 300;
+     }
+     .btn-primary {
+          color:#1a73e8;
+          background: #fff;
+          text-decoration: none;
+     }
+}

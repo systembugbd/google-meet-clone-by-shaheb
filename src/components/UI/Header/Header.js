@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from 'react-router-dom'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faQuestionCircle,
@@ -13,11 +14,12 @@ function Header() {
   return (
     <div className="header">
       <div className="logo">
-        <img
+        <Link className="logoLink" to="/"><img
           alt=""
           src="https://www.gstatic.com/meet/google_meet_horizontal_wordmark_2020q4_1x_icon_124_40_2373e79660dabbf194273d27aa7ee1f5.png"
         />
-        <span className="help-text">Meet</span>
+          <span className="help-text">Meet</span>
+          </Link>
       </div>
       <div className="action-btn">
         <div className="date-block">{date}</div>

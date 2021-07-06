@@ -1,6 +1,7 @@
 import React from 'react'
 import CallPageLink from '../UI/CallPage/CallPageLink'
 import CallPageFooter from '../UI/CallPage/CallPageFooter'
+import Messenger from '../UI/CallPage/Messenger'
 import ('./CallPage.scss')
 
 function CallPage() {
@@ -11,6 +12,7 @@ function CallPage() {
                </div>
                <CallPageLink />
                <CallPageFooter />
+               <Messenger />
           </div>
      )
 }

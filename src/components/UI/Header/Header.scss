@@ -5,18 +5,26 @@
   justify-content: space-between;
   box-sizing: border-box;
   padding: 20px;
+  
   .logo {
     display: flex;
     align-items: center;
-    img {
-      width: 124px;
+    .logoLink{
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      img {
+        width: 124px;
+      }
+      .help-text {
+        font-size: 22px;
+        padding-left: 4px;
+        color: #5f6368;
+        margin-top: -4px;
+      }
     }
-    .help-text {
-      font-size: 22px;
-      padding-left: 4px;
-      color: #5f6368;
-      margin-top: -4px;
-    }
+    
+  
    
   } //logo left end
 

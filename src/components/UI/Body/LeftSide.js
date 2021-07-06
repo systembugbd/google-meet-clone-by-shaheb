@@ -19,7 +19,7 @@ function LeftSide() {
   return (
     <div className="leftside">
       <div className="heading">
-        <h2>
+        <h2 className="h2">
           Premium video meetings. <br className="noneMobile" />
           Now free for&nbsp;everyone.
         </h2>
